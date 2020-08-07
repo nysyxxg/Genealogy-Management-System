@@ -31,7 +31,7 @@ import javafx.stage.Stage;
 public class QQLogin extends Application {
 
     @Override
-    public void start(Stage primaryStage) throws Exception {
+    public void start(final Stage primaryStage) throws Exception {
 
 
         primaryStage.setTitle("家谱 by:H17000623姚君彦");
@@ -44,9 +44,9 @@ public class QQLogin extends Application {
         Text title = new Text("登录");
         title.setFont(Font.font("Tahoma", FontWeight.NORMAL, 20));
         Label Account = new Label("账户:");
-        TextField userAccount = new TextField();
+        final TextField userAccount = new TextField();
         Label pwd = new Label("密码:");
-        PasswordField userPwd = new PasswordField();
+        final PasswordField userPwd = new PasswordField();
         Label no = new Label("没有账号?->");
         no.setTextFill(Color.BLUE);
         Button confirm = new Button("确定");
@@ -81,17 +81,17 @@ public class QQLogin extends Application {
 
             @Override
             public void handle(ActionEvent event) {
-                Stage dialog = new Stage();
+                final Stage dialog = new Stage();
                 dialog.initModality(Modality.APPLICATION_MODAL);
                 dialog.initOwner(primaryStage);
-                User user = MyLoginIn.newUser();
-                Alert alert = new Alert(AlertType.INFORMATION);
+                final User user = MyLoginIn.newUser();
+                final Alert alert = new Alert(AlertType.INFORMATION);
                 alert.setTitle("成功提示");
                 alert.setHeaderText(null);
                 alert.setContentText("您的账户为: " + user.getAccount());
                 alert.showAndWait();
                 dialog.setTitle("设置密码");
-                PasswordField newPwd = new PasswordField();
+                final PasswordField newPwd = new PasswordField();
                 Label label = new Label("密码");
                 Button confirm = new Button("确认");
                 confirm.setOnAction(new EventHandler<ActionEvent>() {
@@ -127,13 +127,13 @@ public class QQLogin extends Application {
             @Override
             public void handle(ActionEvent event) {
 
-                User user = MyLoginIn.findAccount(userAccount.getText());
+                final User user = MyLoginIn.findAccount(userAccount.getText());
                 if (user != null) {
-                    Stage dialog = new Stage();
+                    final Stage dialog = new Stage();
                     dialog.setTitle("重置密码");
                     dialog.initModality(Modality.APPLICATION_MODAL);
                     dialog.initOwner(primaryStage);
-                    PasswordField newPwd = new PasswordField();
+                    final PasswordField newPwd = new PasswordField();
                     Label label = new Label("新密码");
                     Button confirm = new Button("确认");
                     confirm.setOnAction(new EventHandler<ActionEvent>() {

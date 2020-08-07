@@ -15,7 +15,7 @@ import java.util.LinkedList;
 enum gaaaa{
     wowo,nini
 }
-public class test {
+public class Test {
     public static void main(String[] args) {
 //        int[] t1 = new int[3];
 //        System.out.println(t1[0]+" "+t1[1]+" "+t1[2]);

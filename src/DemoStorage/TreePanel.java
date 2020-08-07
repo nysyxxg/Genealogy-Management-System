@@ -185,5 +185,4 @@ public class TreePanel extends JPanel {
         this.startX = startX;
     }
 
-
 }
