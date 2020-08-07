@@ -15,7 +15,7 @@ public class MyLoginIn {
 
     public static void main(String[] args) {
         LoadUser(); //从文件中载入用户数据
-        Application.launch(QQLogin.class, args); //启动javafx Application程序
+        Application.launch(UserLogin.class, args); //启动javafx Application程序
     }
 
     public static void LoadUser() {

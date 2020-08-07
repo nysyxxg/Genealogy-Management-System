@@ -28,7 +28,7 @@ import javafx.scene.text.Text;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
-public class QQLogin extends Application {
+public class UserLogin extends Application {
 
     @Override
     public void start(final Stage primaryStage) throws Exception {
