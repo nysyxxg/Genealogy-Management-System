@@ -83,6 +83,7 @@ public class Test {
 enum MyEnumName {
     wowo, nini
 }
+
 class ttt implements Comparable {
     private int[] birthday = new int[3];//year/month/day
     

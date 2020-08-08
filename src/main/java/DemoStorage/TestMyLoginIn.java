@@ -1,6 +1,7 @@
 package DemoStorage;
 
-import static java.lang.System.err;
+import dataLayer.User;
+import javafx.application.Application;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -8,8 +9,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import dataLayer.User;
-import javafx.application.Application;
+import static java.lang.System.err;
 
 public class TestMyLoginIn {
     static ArrayList<User> list = new ArrayList<User>();  //存放用户数据的列表

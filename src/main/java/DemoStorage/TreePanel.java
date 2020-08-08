@@ -5,13 +5,10 @@ package DemoStorage;
  * 2020/6/18,18:27
  * 奇怪的程序增加了
  */
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.FontMetrics;
-import java.awt.Graphics;
-import java.util.List;
 
-import javax.swing.JPanel;
+import javax.swing.*;
+import java.awt.*;
+import java.util.List;
 
 /**
  * TODO 同一层结点过多有BUG，应该对每一层的所有结点都进行个数统计，之后才绘制。
@@ -57,8 +54,8 @@ public class TreePanel extends JPanel {
     /**
      * 设置要绘制时候的对齐策略
      * @param childAlign 对齐策略
-     * @see DemoStorage.TreePanel#CHILD_ALIGN_RELATIVE
-     * @see DemoStorage.TreePanel#CHILD_ALIGN_ABSOLUTE
+     * @see TreePanel#CHILD_ALIGN_RELATIVE
+     * @see TreePanel#CHILD_ALIGN_ABSOLUTE
      */
     public TreePanel(int childAlign){
         this(null,childAlign);
