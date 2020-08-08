@@ -7,6 +7,13 @@
     <groupId>com.genealogy.edu</groupId>
     <artifactId>Genealogy-Management</artifactId>
     <version>4.0</version>
+
+    <properties>
+        <project.build.sourceEncoding>GBK</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>GBK</project.reporting.outputEncoding>
+        <maven.compiler.encoding>GBK</maven.compiler.encoding>
+    </properties>
+
     <build>
         <plugins>
             <plugin>
@@ -19,6 +26,18 @@
             </plugin>
         </plugins>
     </build>
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.12</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.10.2</version>
+        </dependency>
+    </dependencies>
     <packaging>pom</packaging>
 
     <name>Genealogy-Management-System</name>

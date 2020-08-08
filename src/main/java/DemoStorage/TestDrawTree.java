@@ -64,27 +64,31 @@ public class TestDrawTree extends JFrame{
         Node d7 = new Node("d7");
         
         
-        root.add(a1);
-        root.add(a2);
-        root.add(a3);
-    
-        a3.add(b1);
-        a3.add(b2);
-        a3.add(b3);
-        a3.add(b4);
+        root.add(a1,"父子");
+        root.add(a2,"父子");
+        root.add(a3,"父子");
+//        a1.add(a2,"姐妹");
+//        a2.add(a3,"兄弟");
         
-        b1.add(d1);
-        b1.add(d2);
+        a3.add(b1,"父子");
+        a3.add(b2,"父子");
+        a3.add(b3,"父子");
+        a3.add(b4,"父子");
         
-        b2.add(d5);
-        b2.add(d6);
-        b2.add(d7);
+        b1.add(d1,"父子");
+        b1.add(d2,"父子");
+        
+        b2.add(d5,"父子");
+        b2.add(d6,"父子");
+        b2.add(d7,"父子");
     
-        b4.add(c1);
-        b4.add(c2);
+        b4.add(c1,"父子");
+        b4.add(c2,"父子");
         
         root.printAllNode(root);    //输出树
-
+    
+        System.out.println( JsonUtil.toJson(root));
+       
         /*
          * 创建一个用于绘制树的面板并将树传入,使用相对对齐方式
          */
