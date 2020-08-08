@@ -13,8 +13,8 @@ import java.util.ArrayList;
  */
 public class Common {
     public static ArrayList<User> userList;//读取，存储位置无需改变
-    public static String userInfoPath = "src/data/user.data";//用户数据的存储地点
-    public static String treePath = "src/data/tree.data";//树的存储地点
+    public static String userInfoPath = "data/user.data";//用户数据的存储地点
+    public static String treePath = "data/tree.data";//树的存储地点
     public static Stage currentStage;//用于关闭窗口
     public static Parent currentRoot;//记录当前,用于寻址缓存,下同
     public static Tree currentTree;
